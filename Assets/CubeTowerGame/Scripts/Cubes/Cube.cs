@@ -12,8 +12,9 @@ public class Cube : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
     private Canvas canvas;
     private CanvasGroup canvasGroup;
 
-    public void Cunstruct(Sprite sprite)
+    public void Construct(Sprite sprite)
     {
+        Debug.Log(sprite);
         image.sprite = sprite;
     }
     private void Awake()
