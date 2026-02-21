@@ -13,7 +13,6 @@ public class CubeFactory : ICubeFactory
 
     public Cube CreateCube(Sprite sprite, Transform parent)
     {
-        Debug.Log(sprite);
         Cube cube = GameObject.Instantiate(_prefab, parent);
         cube.Construct(sprite);
 

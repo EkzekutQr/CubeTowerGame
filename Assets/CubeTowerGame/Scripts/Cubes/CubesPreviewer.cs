@@ -14,7 +14,6 @@ public class CubesPreviewer : MonoBehaviour
     {
         foreach (Sprite cubeModel in _cubeModelsProvider.CubeModels)
         {
-            Debug.Log(cubeModel);
             Cube cube = _cubeFactory.CreateCube(cubeModel, _parent);
         }
     }
