@@ -12,9 +12,8 @@ public class CubesPreviewer : MonoBehaviour
 
     public void ShowCubes()
     {
-        foreach (Sprite cubeModel in _cubeModelsProvider.CubeModels)
-        {
-            Cube cube = _cubeFactory.CreateCube(cubeModel, _parent);
-        }
+        foreach (Cube preview in _cubeFactory
+            .CreateFromModels(_parent))
+            preview.Fsm.SetState<PreviewState>();
     }
 }

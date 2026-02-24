@@ -57,3 +57,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bb27bff303e7764aae20add28be89d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tweenSettingsLib: {fileID: 11400000, guid: 9ff33717f39cb1746a83b151f1df5e04, type: 2}
