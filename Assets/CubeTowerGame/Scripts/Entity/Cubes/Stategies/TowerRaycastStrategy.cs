@@ -19,7 +19,7 @@ public class TowerRaycastStrategy : CubeRaycastStrategyBase
             cube.Next == null &&
             owner.transform.position.y > cube.transform.position.y + cube.WorldBounds.size.y)
         {
-            if (result.screenPosition.y + cube.RectTransform.rect.height > Screen.height)
+            if (result.screenPosition.y + (cube.RectTransform.rect.height / 2) > Screen.height)
             {
                 actionLogger.Log(LocalizationKeys.HeightLimitKey);
                 owner.Fsm.SetState<MissState>();
@@ -60,8 +60,3 @@ public class TowerRaycastStrategy : CubeRaycastStrategyBase
         return new Vector2(posX, posY);
     }
 }
-
-
-
-
-
